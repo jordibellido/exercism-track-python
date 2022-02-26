@@ -15,5 +15,9 @@ exercise-4-test:
 	python3 -m pytest 4-meltdown-mitigation/conditionals_test.py
 .PHONY: exercise-4-test
 
+exercise-5-test:
+	python3 -m pytest 5-little-sisters-vocab/strings_test.py
+.PHONY: exercise-5-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete

@@ -11,5 +11,9 @@ exercise-3-test:
 	python3 -m pytest 3-ghost-gobble-arcade-game/arcade_game_test.py
 .PHONY: exercise-3-test
 
+exercise-4-test:
+	python3 -m pytest 4-meltdown-mitigation/conditionals_test.py
+.PHONY: exercise-4-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete

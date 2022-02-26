@@ -1,3 +1,7 @@
+"""
+Exercise 2 - Guido's Gorgeous Lasagna
+"""
+
 EXPECTED_BAKE_TIME = 40
 PREPARATION_TIME   = 2
 
@@ -12,7 +16,7 @@ def bake_time_remaining (elapsed_bake_time):
     based on the `EXPECTED_BAKE_TIME`.
     """
 
-    return (EXPECTED_BAKE_TIME - elapsed_bake_time)
+    return EXPECTED_BAKE_TIME - elapsed_bake_time
 
 def preparation_time_in_minutes (number_of_layers):
     """Calculate how many minutes you would spend making the lasagna.
@@ -24,7 +28,7 @@ def preparation_time_in_minutes (number_of_layers):
     how many minutes you will spend on this task, based on the `PREPARATION_TIME`.
     """
 
-    return (PREPARATION_TIME * number_of_layers)
+    return PREPARATION_TIME * number_of_layers
 
 def elapsed_time_in_minutes (number_of_layers, elapsed_bake_time):
     """

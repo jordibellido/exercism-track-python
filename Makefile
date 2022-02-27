@@ -27,5 +27,9 @@ exercise-7-test:
 	python3 -m pytest 7-card-games/lists_test.py
 .PHONY: exercise-7-test
 
+exercise-8-test:
+	python3 -m pytest 8-chaitanas-colossal-coaster/lists_methods_test.py
+.PHONY: exercise-8-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete

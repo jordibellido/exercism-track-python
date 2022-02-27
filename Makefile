@@ -35,6 +35,10 @@ exercise-9-test:
 	python3 -m pytest 9-making-the-grade/loops_test.py
 .PHONY: exercise-9-test
 
+exercise-10-test:
+	python3 -m pytest 10-little-sisters-essay/string_methods_test.py
+.PHONY: exercise-10-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 	rm --recursive --force */.pytest_cache/ .pytest_cache/

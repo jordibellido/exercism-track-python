@@ -23,5 +23,9 @@ exercise-6-test:
 	python3 -m pytest 6-black-jack/black_jack_test.py
 .PHONY: exercise-6-test
 
+exercise-7-test:
+	python3 -m pytest 7-card-games/lists_test.py
+.PHONY: exercise-7-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete

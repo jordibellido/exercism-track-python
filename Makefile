@@ -33,3 +33,4 @@ exercise-8-test:
 
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
+	rm --recursive --force */.pytest_cache/ .pytest_cache/

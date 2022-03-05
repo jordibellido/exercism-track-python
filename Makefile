@@ -47,6 +47,10 @@ exercise-12-test:
 	python3 -m pytest 12-tisbury-treasure-hunt/tuples_test.py
 .PHONY: exercise-12-test
 
+exercise-13-test:
+	python3 -m pytest 13-inventory-management/dicts_test.py
+.PHONY: exercise-13-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 	rm --recursive --force */.pytest_cache/ .pytest_cache/

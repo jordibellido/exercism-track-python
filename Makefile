@@ -43,6 +43,10 @@ exercise-11-test:
 	python3 -m pytest 11-currency-exchange/exchange_test.py
 .PHONY: exercise-11-test
 
+exercise-12-test:
+	python3 -m pytest 12-tisbury-treasure-hunt/tuples_test.py
+.PHONY: exercise-12-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 	rm --recursive --force */.pytest_cache/ .pytest_cache/

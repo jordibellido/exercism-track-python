@@ -71,6 +71,10 @@ exercise-18-test:
 	python3 -m pytest 18-high-scores/high_scores_test.py
 .PHONY: exercise-18-test
 
+exercise-19-test:
+	python3 -m pytest 19-matrix/matrix_test.py
+.PHONY: exercise-19-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 	rm --recursive --force */.pytest_cache/ .pytest_cache/

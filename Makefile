@@ -59,6 +59,10 @@ exercise-15-test:
 	python3 -m pytest 15-ellens-alien-game/classes_test.py
 .PHONY: exercise-15-test
 
+exercise-16-test:
+	python3 -m pytest 16-two-fer/two_fer_test.py
+.PHONY: exercise-16-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 	rm --recursive --force */.pytest_cache/ .pytest_cache/

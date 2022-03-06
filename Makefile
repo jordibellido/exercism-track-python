@@ -67,6 +67,10 @@ exercise-17-test:
 	python3 -m pytest 17-raindrops/raindrops_test.py
 .PHONY: exercise-17-test
 
+exercise-18-test:
+	python3 -m pytest 18-high-scores/high_scores_test.py
+.PHONY: exercise-18-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 	rm --recursive --force */.pytest_cache/ .pytest_cache/

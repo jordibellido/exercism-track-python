@@ -51,6 +51,10 @@ exercise-13-test:
 	python3 -m pytest 13-inventory-management/dicts_test.py
 .PHONY: exercise-13-test
 
+exercise-14-test:
+	python3 -m pytest 14-cater-waiter/sets_test.py
+.PHONY: exercise-14-test
+
 clean:
 	find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 	rm --recursive --force */.pytest_cache/ .pytest_cache/
